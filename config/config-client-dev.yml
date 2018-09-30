@@ -1,7 +1,7 @@
 
 foo: foo version 大家好啊 我是你杨个
 democonfigclient:
-    message: 最后测试一波bus refresh
+    message: 说好的刷新呢
 
 # routes to serviceId
 # routes to url
