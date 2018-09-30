@@ -1,7 +1,7 @@
 
 foo: foo version 大家好啊 我是你杨个
 democonfigclient:
-    message: hello spring io 杨个
+    message: 最后测试一波bus refresh
 
 # routes to serviceId
 # routes to url
