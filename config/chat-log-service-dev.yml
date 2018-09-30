@@ -1,21 +1,7 @@
-eureka:
- client:
-   serviceUrl:
-    defaultZone: http://192.168.31.71:8761/eureka/
-feign:
-  hystrix: #开启熔断机制 防止雪崩
-    enabled: true  
-spring:
-  #配置服务追踪
-  #zipkin:
-   # base-url: http://localhost:9411
-  application:
-    name: chat-log-service
-  #配置mybatis-yml文件生效
-  #profiles:
-   # active: mybatis
-  #配置mongodb
-  data:
+server:
+  port: 8765
+
+data:
     mongodb:
       uri: mongodb://127.0.0.1:27017/spring-boot
   #配置redis
@@ -34,23 +20,9 @@ spring:
       max-idle: 8 
       #最小空闲
       min-idle: 0 
-  #配置热部署工具   
-  devtools:
-    restart:
-      enabled: true
-      additional-paths: src/main/java
-      exclude: templates/**
-  #配置activeMQ
-  #activemq:
-    #broker-url: tcp://localhost:61616
-   # user: admin
-    #password: admin
-    #in-memory: true
-  #  pool:
-    #  enabled: false
-
 #配置日志
 logging:
-  path: /com/yangyiwei
-  level:
-    com.chat.springboot: debug
+  config: classpath:logback-close.xml #如果使用该配置 所有日志将写入redis 
+ # path: /com/yangyiwei
+  #level:
+  #  com.chat.springboot: debug
