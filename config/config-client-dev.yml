@@ -1,7 +1,8 @@
-
+server:
+  port: 8882
 foo: foo version 大家好啊 我是你杨个
 democonfigclient:
-    message: 说好的刷新呢@@@@@@@@@@@@@
+    message: 修改端口试试
 
 # routes to serviceId
 # routes to url
