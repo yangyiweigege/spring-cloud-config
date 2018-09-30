@@ -1,7 +1,7 @@
 
 foo: foo version 大家好啊 我是你杨个
 democonfigclient:
-    message: hello spring io 啦啦啦啦啦啦
+    message: hello spring io 杨个
 
 # routes to serviceId
 # routes to url
