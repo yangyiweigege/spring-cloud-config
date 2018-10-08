@@ -10,7 +10,7 @@ spring:
   #配置redis
   redis:
     database: 0
-    host: 192.168.31.72
+    host: 192.168.31.71
     port: 6379
     timeout: 0
     password: password
