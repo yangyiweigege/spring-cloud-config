@@ -2,7 +2,7 @@ feign:
   hystrix: #开启熔断机制 防止雪崩
     enabled: true  
 server:
-  port: 8764
+  port: 8765
 spring:
   data:
     mongodb:
@@ -10,7 +10,7 @@ spring:
   #配置redis
   redis:
     database: 0
-    host: 192.168.31.72
+    host: 192.168.31.71
     port: 6379
     timeout: 0
     password: password
