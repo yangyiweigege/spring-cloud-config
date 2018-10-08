@@ -1,8 +1,6 @@
 feign:
   hystrix: #开启熔断机制 防止雪崩
     enabled: true  
-server:
-  port: 8765
 spring:
   data:
     mongodb:
